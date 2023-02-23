@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div> <input type="text" placeholder="Search" id="txt"> </div>
+  <br>
+  <div class="gallary">
+    <div class="pic">
+      <img onclick="main.src = this.src" src="pic/img11.jpg" alt="..">
+      <img onclick="main.src = this.src" src="pic/img12.jpg" alt="..">
+      <img onclick="main.src = this.src" src="pic/img13.jpg" alt="..">
+      <img onclick="main.src = this.src" src="pic/img14.jpg" alt="..">
+      <img onclick="main.src = this.src" src="pic/img15.jpg" alt="..">
+      <img onclick="main.src = this.src" src="pic/img16.jpg" alt="..">
+    </div>
+    <div class="main">
+      <img src="pic/img11.jpg" name="main" alt="..">
+
+    </div>
+
+    <div class="pic">
+      <img onmouseenter="main.src = this.src" src="pic/img11.jpg" alt="..">
+      <img onmouseenter="main.src = this.src" src="pic/img12.jpg" alt="..">
+      <img onmouseenter="main.src = this.src" src="pic/img13.jpg" alt="..">
+      <img onmouseenter="main.src = this.src" src="pic/img14.jpg" alt="..">
+      <img onmouseenter="main.src = this.src" src="pic/img15.jpg" alt="..">
+      <img onmouseenter="main.src = this.src" src="pic/img16.jpg" alt="..">
+    </div>
+    <style>
+      body {
+        width: 2000px;
+        height: 2000px;
+      }
+
+      #btn {
+        width: 30px;
+        height: 30px;
+        border: none;
+        background: rgb(227, 21, 161);
+        color: #ff3;
+        cursor: pointer;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        display: none;
+
+      }
+    </style>
+
+    <div>
+      <button id="btn">^</button>
+    </div>
+  </div>
+
+  <br>
+  <h2> Choes your background color</h2>
+
+  <div class="colo" onclick="setcolor(this.id)" id="red"></div>
+  <div class="colo" onclick="setcolor(this.id)" id="blue"></div>
+  <div class="colo" onclick="setcolor(this.id)" id="green"></div>
+  <div class="colo" onclick="setcolor(this.id)" id="white"></div>
+  <div class="colo" onclick="setcolor(this.id)" id="black"></div>
+
+
+
+
+
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
